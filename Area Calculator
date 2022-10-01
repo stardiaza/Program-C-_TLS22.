@@ -1,0 +1,58 @@
+# Program-C-_TLS22.
+Diaz Astari Beningati_Laplace
+//Circle/Triangle/Rectangle Area Calculator//
+#include <iostream>
+using namespace std;
+
+int main()
+{   
+    
+    cout<<"This program helps you to calculate circle/triangle/rectangle area";
+    cout<<endl;
+    cout<<"-----------------------------------------------------------------" ;
+    cout<<endl;
+    
+    char x;
+    float r, b, h, l, w, area ; 
+    cout<<"What area do you want to calculate?" ;
+    cout<<endl;
+    cout<<"Type 1 for circle, Type 2 for triangle, Type 3 for rectangle :";
+    cin>>x; 
+    switch(x) 
+    {
+        case '1' :
+            { cout<<"Input radius :" ;
+              cin>>r;
+              area = 3.14 * r * r;
+              cout << "Circle area = "<< area << endl;
+              cout <<endl;
+              break;
+            }
+        case '2' :
+            { cout <<"Input base :" ;
+              cin  >>b;
+              cout <<"Input height :" ;
+              cin  >>h;
+              area = 0.5 * b * h;
+              cout << "Triangle area = "<< area << endl;
+              cout <<endl;
+              break;
+            }
+        case '3' :
+            { cout <<"Input length :" ;
+              cin  >>l;
+              cout <<"Input width :" ;
+              cin  >>w;
+              area = w * l;
+              cout << "Rectangle area = "<< area << endl;
+              cout <<endl;
+              break;
+            }
+        default :
+            cout << "Error! please type the number only";
+            break;
+    }
+    
+    
+    return 0;
+}
